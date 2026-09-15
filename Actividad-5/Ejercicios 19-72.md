@@ -1,6 +1,6 @@
 # Actividad #5. Números Complejos
 
-| DATOS  |
+| DATOS | |
 | :--- | :--- |
 | **Alumno** | Rodrigo Barrera García |
 | **Profesor** | Jorge Javier Pedroza Romero |
