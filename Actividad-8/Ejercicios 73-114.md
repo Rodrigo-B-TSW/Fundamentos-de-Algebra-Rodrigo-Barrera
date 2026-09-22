@@ -7,7 +7,7 @@
 | **Materia** | Fundamentos de Álgebra |
 | **Fecha** | 22/09/2026 |
 
-### NOTA: La organización y el diseño en html/markdown fue utilizada el apoyo de herramientas de inteligencia artificial, los procedimientos de cada ejercicio fue hecho de forma personal y de lo aprendido en clase.
+### NOTA: La organización y el diseño en html/markdown fueron utilizadas herramientas de inteligencia artificial para apoyar al trabajo, los procedimientos de cada ejercicio fueron hechos de manera personal y de lo aprendido en clase.
 ---
 ## Binario a Decimal
 
