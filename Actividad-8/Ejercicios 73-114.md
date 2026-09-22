@@ -426,3 +426,93 @@ Cada dígito hexadecimal se convierte primero a decimal y luego a su equivalente
 | 104 | -10p³ - 6 + 9p² - 4p⁵ - 2p⁸ | 8 | Polinomio de 8vo grado | El mayor exponente es p⁸ |
 | 105 | 7x⁸ | 8 | Monomio de 8vo grado | El único término tiene exponente x⁸ |
 | 106 | -2n + n⁴ + 10n⁶ | 6 | Trinomio de 6to grado | El mayor exponente es n⁶ |
+| 107 | 5 | 0 | Monomio de grado cero (término constante) | No tiene variable, el exponente implícito es 0 |
+| 108 | 5v⁷ | 7 | Monomio de 7mo grado | El único término tiene exponente v⁷ |
+
+---
+
+## Problemas Prácticos
+
+**109.** Amy llena la entrada de concreto en 8 h. Junto con Jill, tardan 3.08 h. ¿Cuánto tardaría Jill sola?
+
+Planteamiento (razones de trabajo):
+
+$$\frac{1}{8} + \frac{1}{t} = \frac{1}{3.08}$$
+
+$$\frac{1}{t} = \frac{1}{3.08} - \frac{1}{8} = 0.3247 - 0.125 = 0.1997$$
+
+$$t = \frac{1}{0.1997}$$
+
+> **Jill tardaría sola ≈ 5 horas**
+
+---
+
+**110.** Jaidee cava el hoyo en 5 h, Ted en 7 h. ¿Cuánto tardarían juntos?
+
+$$\frac{1}{5} + \frac{1}{7} = \frac{7}{35} + \frac{5}{35} = \frac{12}{35}$$
+
+$$t = \frac{35}{12} \approx 2.92 \text{ h}$$
+
+> **Juntos tardarían ≈ 2.92 horas (2 h 55 min)**
+
+---
+
+**111.** El avión de carga sale primero; 4 h después sale el de la Fuerza Aérea a 310 km/h y lo alcanza tras volar 6 h. ¿Velocidad promedio del avión de carga?
+
+Cuando lo alcanza, el avión de carga ya lleva volando: 4 h + 6 h = **10 h**
+
+Distancia recorrida por el de la Fuerza Aérea (= distancia del avión de carga):
+
+$$d = 310 \text{ km/h} \times 6 \text{ h} = 1860 \text{ km}$$
+
+Velocidad del avión de carga:
+
+$$v = \frac{1860 \text{ km}}{10 \text{ h}}$$
+
+> **Velocidad promedio del avión de carga = 186 km/h**
+
+---
+
+**112.** Tren de carga: ida a 35 km/h, regreso a 49 km/h. El regreso tomó 10 h. ¿Cuánto tomó la ida? (misma distancia ambos tramos)
+
+Distancia (usando el regreso):
+
+$$d = 49 \text{ km/h} \times 10 \text{ h} = 490 \text{ km}$$
+
+Tiempo de ida:
+
+$$t = \frac{490 \text{ km}}{35 \text{ km/h}}$$
+
+> **El viaje de ida tomó 14 horas**
+
+---
+
+**113.** 1 yd³ de tierra con 30% de arena se mezcla con 4 yd³ con 20% de arena. ¿% de arena en la mezcla?
+
+Arena total:
+
+$$(1)(0.30) + (4)(0.20) = 0.30 + 0.80 = 1.10 \text{ yd}^3$$
+
+Volumen total = 1 + 4 = 5 yd³
+
+Porcentaje:
+
+$$\frac{1.10}{5} = 0.22$$
+
+> **La mezcla contiene 22% de arena**
+
+---
+
+**114.** James mezcla 7 L de ponche Marca A (11% jugo) con 6 L de Marca B (24% jugo). ¿Qué % de la mezcla es jugo de fruta?
+
+Jugo total:
+
+$$(7)(0.11) + (6)(0.24) = 0.77 + 1.44 = 2.21 \text{ L}$$
+
+Volumen total = 7 + 6 = 13 L
+
+Porcentaje:
+
+$$\frac{2.21}{13} = 0.17$$
+
+> **La mezcla contiene 17% de jugo de fruta**
