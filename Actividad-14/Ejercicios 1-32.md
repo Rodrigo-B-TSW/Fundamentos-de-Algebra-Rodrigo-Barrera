@@ -117,7 +117,7 @@
  
 > 📐 **Fórmula:** $(x+a)(x+b) = x^2 + (a+b)x + ab$
  
-| N.º | Ejercicio | Procedimiento | ✅ Resultado |
+| N.º | Ejercicio | Procedimiento | Resultado |
 |:---:|:---:|:---:|:---:|
 | 17 | $(8m+8)(8m+5)$ | $(8m)^2 + (8+5)(8m) + (8)(5)$ | $64m^2 + 104m + 40$ |
 | 18 | $(5p+8)(5p+6)$ | $(5p)^2 + (8+6)(5p) + (8)(6)$ | $25p^2 + 70p + 48$ |
