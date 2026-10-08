@@ -3,7 +3,7 @@
 | DATOS | |
 | :--- | :--- |
 | **Alumno** | Rodrigo Barrera García |
-| **Profesor** | Jorge Javier Pedroza Romero |
+| **Profesor** | Jorge Javier Pedrozo Romero |
 | **Materia** | Fundamentos de Álgebra |
 | **Fecha** | 08/10/2026 |
 | **Lugar** | Mérida, Yucatán. México |
