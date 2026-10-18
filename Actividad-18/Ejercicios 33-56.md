@@ -10,7 +10,7 @@
 
 ---
  
-> **Estrategia general:** primero se busca siempre el **factor común** (el mayor posible). Después se revisa si lo que queda es un trinomio cuadrado perfecto, una diferencia de cuadrados o un trinomio general. Así se llega a la *mínima expresión*.
+> Primero se busca siempre el **factor común** (el mayor posible). Después se revisa si lo que queda es un trinomio cuadrado perfecto, una diferencia de cuadrados o un trinomio general. Así se llega a la *mínima expresión*.
  
 ---
  
