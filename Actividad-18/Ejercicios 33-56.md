@@ -1,12 +1,14 @@
-# Factorización de polinomios
- 
-Factoriza los siguientes polinomios a su mínima expresión.
- 
-| Bloque | Ejercicios | Tema |
-|:---:|:---:|---|
-| 1 | 33 – 40 | Factor común y trinomio $ax^2+bx+c$ |
-| 2 | 41 – 48 | Trinomio cuadrado perfecto |
-| 3 | 49 – 56 | Diferencia de cuadrados |
+# Actividad #18. Factorización - Unidad II
+
+| DATOS | |
+| :--- | :--- |
+| **Alumno** | Rodrigo Barrera García |
+| **Profesor** | Jorge Javier Pedrozo Romero |
+| **Materia** | Fundamentos de Álgebra |
+| **Fecha** | 17/10/2026 |
+| **Lugar** | Mérida, Yucatán. México |
+
+---
  
 > **Estrategia general:** primero se busca siempre el **factor común** (el mayor posible). Después se revisa si lo que queda es un trinomio cuadrado perfecto, una diferencia de cuadrados o un trinomio general. Así se llega a la *mínima expresión*.
  
