@@ -1,4 +1,4 @@
-# Actividad #18. Factorización I: TCP, Suma/Dif. de Cubos, Término Común - Unidad II
+# Actividad #17. Factorización I: TCP, Suma/Dif. de Cubos, Término Común - Unidad II
 
 | DATOS | |
 | :--- | :--- |
