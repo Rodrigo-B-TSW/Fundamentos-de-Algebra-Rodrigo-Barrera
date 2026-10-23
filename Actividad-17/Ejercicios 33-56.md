@@ -1,4 +1,4 @@
-# Actividad #17. Factorización I: TCP, Suma/Dif. de Cubos, Término Común - Unidad II
+# Actividad #17. Factorización I: TCP, Suma/Dif. de Cubos, Término General - Unidad II
 
 | DATOS | |
 | :--- | :--- |
@@ -10,7 +10,7 @@
 
 ---
  
-> Primero se busca siempre el **factor común** (el mayor posible). Después se revisa si lo que queda es un trinomio cuadrado perfecto, una diferencia de cuadrados o un trinomio de término común. Así se llega a la mínima expresión.
+> Primero se busca siempre el **factor común** (el mayor posible). Después se revisa si lo que queda es un trinomio cuadrado perfecto, una diferencia de cuadrados o un trinomio de término general. Así se llega a la mínima expresión.
  
 ---
  
