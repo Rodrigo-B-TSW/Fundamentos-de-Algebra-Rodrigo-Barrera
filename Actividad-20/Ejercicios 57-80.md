@@ -1,13 +1,13 @@
-# Factorización: cubos y trinomios
- 
-Ejercicios 57 al 80. Cada ejercicio muestra el procedimiento paso a paso y su resultado.
- 
-| Bloque | Ejercicios | Tema |
-|:---:|:---:|---|
-| 1 | 57 – 64 | Suma y diferencia de cubos |
-| 2 | 65 – 72 | Trinomio $x^2+bx+c$ (cambio de variable) |
-| 3 | 73 – 80 | Trinomio $ax^2+bx+c$ (método de las aspas) |
- 
+# Actividad #20. Factorización II: Trinomios - Unidad II
+
+| DATOS | |
+| :--- | :--- |
+| **Alumno** | Rodrigo Barrera García |
+| **Profesor** | Jorge Javier Pedrozo Romero |
+| **Materia** | Fundamentos de Álgebra |
+| **Fecha** | 22/10/2026 |
+| **Lugar** | Mérida, Yucatán. México |
+
 ---
  
 ## 1. Suma y diferencia de cubos · Ejercicios 57-64
@@ -322,17 +322,17 @@ Ejercicios 57 al 80. Cada ejercicio muestra el procedimiento paso a paso y su re
 **Resultado:** $x(2x^2-7)(x-3)(x+3)$
  
 #### Ejercicio 80: $5x^6-2x^4+10x^2$
- 
+
 1. Factor común $x^2$: $x^2(5x^4-2x^2+10)$
 2. Aspas: $5x^4=(5x^2)(x^2)$. Como el último término es $+10$ y el del medio es negativo, las dos constantes deben ser negativas. Pruebo todas las posibilidades:
-| Constantes (arriba, abajo) | Multiplicación en cruz | Suma | ¿Es $-2x^2$? |
-|:---:|:---:|:---:|:---:|
-| $-1,\ -10$ | $(x^2)(-1)+(5x^2)(-10)$ | $-51x^2$ | No |
-| $-10,\ -1$ | $(x^2)(-10)+(5x^2)(-1)$ | $-15x^2$ | No |
-| $-2,\ -5$ | $(x^2)(-2)+(5x^2)(-5)$ | $-27x^2$ | No |
-| $-5,\ -2$ | $(x^2)(-5)+(5x^2)(-2)$ | $-15x^2$ | No |
- 
+
+   | Constantes (arriba, abajo) | Multiplicación en cruz | Suma | ¿Es $-2x^2$? |
+   |:---:|:---:|:---:|:---:|
+   | $-1,\ -10$ | $(x^2)(-1)+(5x^2)(-10)$ | $-51x^2$ | No |
+   | $-10,\ -1$ | $(x^2)(-10)+(5x^2)(-1)$ | $-15x^2$ | No |
+   | $-2,\ -5$ | $(x^2)(-2)+(5x^2)(-5)$ | $-27x^2$ | No |
+   | $-5,\ -2$ | $(x^2)(-5)+(5x^2)(-2)$ | $-15x^2$ | No |
+
 3. Ninguna combinación da $-2x^2$, así que el trinomio $5x^4-2x^2+10$ no se puede factorizar más.
+
 **Resultado:** $x^2(5x^4-2x^2+10)$
- 
----
