@@ -7,11 +7,18 @@
 | **Materia** | Fundamentos de Álgebra |
 | **Fecha** | 23/10/2026 |
 | **Lugar** | Mérida, Yucatán. México |
-
+ 
 ### NOTA: La organización y el diseño en html/markdown fueron utilizadas herramientas de inteligencia artificial como apoyo, los procedimientos de cada ejercicio fueron hechos de manera personal y de lo aprendido en clase.
 --- 
- 
-## 1. Ecuaciones con paréntesis · Ejercicios 89-96
+
+## 1. Planos cartesianos · Ejercicios 81-88
+
+Adjunto la imagen de todos los ejercicios en 1 solo de las gráficas con plano cartesiano y su representación en ella.
+
+<img width="611" height="820" alt="image" src="https://github.com/user-attachments/assets/df1c093e-5357-4beb-b42e-9b3e9f62e361" />
+
+
+## 2. Ecuaciones con paréntesis · Ejercicios 89-96
  
 > **Procedimiento:**
 >
@@ -147,7 +154,7 @@ $$
  
 ---
  
-## 2. Ecuaciones con fracciones · Ejercicios 97-102
+## 3. Ecuaciones con fracciones · Ejercicios 97-102
  
 > **Procedimiento:**
 >
@@ -160,12 +167,12 @@ $$
  
 $$
 \begin{aligned}
-\frac{493}{32}-\frac{13}{8}x &= -\frac{7}{4}\left(-\frac{11}{6}x+\frac{29}{8}\right)\\[4pt]
-\frac{493}{32}-\frac{13}{8}x &= \frac{77}{24}x-\frac{203}{32}\\[4pt]
+\frac{493}{32}-\frac{13}{8}x &= -\frac{7}{4}\left(-\frac{11}{6}x+\frac{29}{8}\right)\\
+\frac{493}{32}-\frac{13}{8}x &= \frac{77}{24}x-\frac{203}{32}\\
 1479-156x &= 308x-609\\
 -156x-308x &= -609-1479\\
 -464x &= -2088\\
-x &= \frac{-2088}{-464}\\[4pt]
+x &= \frac{-2088}{-464}\\
 x &= \frac{9}{2}
 \end{aligned}
 $$
@@ -176,12 +183,12 @@ $$
  
 $$
 \begin{aligned}
-\frac{5}{3}+x &= -\frac{7}{6}\left(x-\frac{9}{5}\right)\\[4pt]
-\frac{5}{3}+x &= -\frac{7}{6}x+\frac{21}{10}\\[4pt]
+\frac{5}{3}+x &= -\frac{7}{6}\left(x-\frac{9}{5}\right)\\
+\frac{5}{3}+x &= -\frac{7}{6}x+\frac{21}{10}\\
 50+30x &= -35x+63\\
 30x+35x &= 63-50\\
 65x &= 13\\
-x &= \frac{13}{65}\\[4pt]
+x &= \frac{13}{65}\\
 x &= \frac{1}{5}
 \end{aligned}
 $$
@@ -192,9 +199,9 @@ $$
  
 $$
 \begin{aligned}
--\frac{96}{35}-\frac{4}{3}p &= \frac{24}{7}\left(\frac{14}{3}p-\frac{4}{5}\right)\\[4pt]
--\frac{96}{35}-\frac{4}{3}p &= 16p-\frac{96}{35}\\[4pt]
--\frac{4}{3}p &= 16p\\[4pt]
+-\frac{96}{35}-\frac{4}{3}p &= \frac{24}{7}\left(\frac{14}{3}p-\frac{4}{5}\right)\\
+-\frac{96}{35}-\frac{4}{3}p &= 16p-\frac{96}{35}\\
+-\frac{4}{3}p &= 16p\\
 -4p &= 48p\\
 -4p-48p &= 0\\
 -52p &= 0\\
@@ -208,12 +215,12 @@ $$
  
 $$
 \begin{aligned}
--\frac{11}{4}\left(-\frac{1}{2}x+1\right) &= -\frac{5}{4}+\frac{3}{8}x\\[4pt]
-\frac{11}{8}x-\frac{11}{4} &= -\frac{5}{4}+\frac{3}{8}x\\[4pt]
+-\frac{11}{4}\left(-\frac{1}{2}x+1\right) &= -\frac{5}{4}+\frac{3}{8}x\\
+\frac{11}{8}x-\frac{11}{4} &= -\frac{5}{4}+\frac{3}{8}x\\
 11x-22 &= -10+3x\\
 11x-3x &= -10+22\\
 8x &= 12\\
-x &= \frac{12}{8}\\[4pt]
+x &= \frac{12}{8}\\
 x &= \frac{3}{2}
 \end{aligned}
 $$
@@ -224,12 +231,12 @@ $$
  
 $$
 \begin{aligned}
--\frac{3}{2}r-\frac{317}{48} &= -\frac{19}{8}\left(r+\frac{10}{3}\right)\\[4pt]
--\frac{3}{2}r-\frac{317}{48} &= -\frac{19}{8}r-\frac{95}{12}\\[4pt]
+-\frac{3}{2}r-\frac{317}{48} &= -\frac{19}{8}\left(r+\frac{10}{3}\right)\\
+-\frac{3}{2}r-\frac{317}{48} &= -\frac{19}{8}r-\frac{95}{12}\\
 -72r-317 &= -114r-380\\
 -72r+114r &= -380+317\\
 42r &= -63\\
-r &= \frac{-63}{42}\\[4pt]
+r &= \frac{-63}{42}\\
 r &= -\frac{3}{2}
 \end{aligned}
 $$
@@ -240,12 +247,12 @@ $$
  
 $$
 \begin{aligned}
--\frac{7}{6}\left(r+\frac{13}{7}\right) &= -\frac{103}{30}+2r\\[4pt]
--\frac{7}{6}r-\frac{13}{6} &= -\frac{103}{30}+2r\\[4pt]
+-\frac{7}{6}\left(r+\frac{13}{7}\right) &= -\frac{103}{30}+2r\\
+-\frac{7}{6}r-\frac{13}{6} &= -\frac{103}{30}+2r\\
 -35r-65 &= -103+60r\\
 -35r-60r &= -103+65\\
 -95r &= -38\\
-r &= \frac{-38}{-95}\\[4pt]
+r &= \frac{-38}{-95}\\
 r &= \frac{2}{5}
 \end{aligned}
 $$
@@ -256,7 +263,7 @@ $$
  
 ---
  
-## 3. Problemas de trabajo · Ejercicios 111-112
+## 4. Ecuaciones con problemas · Ejercicios 111-112
  
 > **Idea:** si una persona tarda $T$ horas en hacer todo el trabajo, en $t$ horas hace la parte $\dfrac{t}{T}$. Cuando trabajan juntos, la suma de las partes que hace cada uno es igual a $1$ (trabajo completo).
  
@@ -266,10 +273,10 @@ $$
  
 $$
 \begin{aligned}
-\frac{t}{8}+\frac{t}{11} &= 1\\[4pt]
+\frac{t}{8}+\frac{t}{11} &= 1\\
 11t+8t &= 88\\
 19t &= 88\\
-t &= \frac{88}{19}\\[4pt]
+t &= \frac{88}{19}\\
 t &\approx 4.63
 \end{aligned}
 $$
@@ -282,10 +289,10 @@ $$
  
 $$
 \begin{aligned}
-\frac{5.65}{x}+\frac{5.65}{10} &= 1\\[4pt]
-\frac{5.65}{x}+0.565 &= 1\\[4pt]
-\frac{5.65}{x} &= 0.435\\[4pt]
-x &= \frac{5.65}{0.435}\\[4pt]
+\frac{5.65}{x}+\frac{5.65}{10} &= 1\\
+\frac{5.65}{x}+0.565 &= 1\\
+\frac{5.65}{x} &= 0.435\\
+x &= \frac{5.65}{0.435}\\
 x &\approx 12.99
 \end{aligned}
 $$
@@ -294,7 +301,7 @@ $$
  
 ---
  
-## 4. Problemas de movimiento · Ejercicios 113-120
+#### Ejercicios 113-120
  
 > **Fórmula:** $d = v \cdot t$ (distancia = velocidad por tiempo)
 >
@@ -326,7 +333,7 @@ $$
 \begin{aligned}
 6v &= 9(12)\\
 6v &= 108\\
-v &= \frac{108}{6}\\[4pt]
+v &= \frac{108}{6}\\
 v &= 18
 \end{aligned}
 $$
@@ -341,7 +348,7 @@ $$
 \begin{aligned}
 3v &= 75(2)\\
 3v &= 150\\
-v &= \frac{150}{3}\\[4pt]
+v &= \frac{150}{3}\\
 v &= 50
 \end{aligned}
 $$
@@ -404,7 +411,7 @@ $$
 \begin{aligned}
 17t+29t &= 552\\
 46t &= 552\\
-t &= \frac{552}{46}\\[4pt]
+t &= \frac{552}{46}\\
 t &= 12
 \end{aligned}
 $$
@@ -429,7 +436,7 @@ $$
  
 ---
  
-## 5. Problemas de mezclas · Ejercicios 121-128
+#### Ejercicios 121-128
  
 > **Idea:** cantidad de sustancia pura = cantidad de mezcla $\times$ concentración (en decimal).
 >
@@ -445,7 +452,7 @@ $$
 0.88x+12 &= 0.96x+11.52\\
 12-11.52 &= 0.96x-0.88x\\
 0.48 &= 0.08x\\
-x &= \frac{0.48}{0.08}\\[4pt]
+x &= \frac{0.48}{0.08}\\
 x &= 6
 \end{aligned}
 $$
@@ -563,3 +570,4 @@ $$
 **Respuesta:** se necesitan agregar $4$ pies cúbicos.
  
 ---
+ 
