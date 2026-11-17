@@ -1,20 +1,17 @@
-# Operaciones con matrices
-
-Ejercicios 1 al 12: suma y resta, multiplicación por un escalar y multiplicación de matrices. Cada ejercicio muestra el procedimiento paso a paso.
-
-| Bloque | Ejercicios | Tema |
-|:---:|:---:|---|
-| 1 | 1 – 4 | Suma y resta de matrices |
-| 2 | 5 – 8 | Multiplicación de un escalar por una matriz |
-| 3 | 9 – 12 | Multiplicación de matrices |
-
----
+# Actividad #26. Matrices: Suma, Resta y Multiplicación
+ 
+| DATOS | |
+| :--- | :--- |
+| **Alumno** | Rodrigo Barrera García |
+| **Profesor** | Jorge Javier Pedrozo Romero |
+| **Materia** | Fundamentos de Álgebra |
+| **Fecha** | 16/11/2026 |
+| **Lugar** | Mérida, Yucatán. México |
+ 
+### NOTA: La organización y el diseño en html/markdown fueron utilizadas herramientas de inteligencia artificial como apoyo, los procedimientos de cada ejercicio fueron hechos de manera personal y de lo aprendido en clase.
+--- 
 
 ## 1. Suma y resta de matrices · Ejercicios 1-4
-
-> **Regla:** solo se pueden sumar o restar matrices de la **misma dimensión**. Se opera elemento con elemento (misma posición):
->
-> $(A \pm B)_{ij} = a_{ij} \pm b_{ij}$
 
 #### Ejercicio 1
 
@@ -151,12 +148,6 @@ $$
 
 ## 2. Multiplicación de un escalar por una matriz · Ejercicios 5-8
 
-> **Regla:** el escalar multiplica a **cada elemento** de la matriz:
->
-> $(kA)_{ij} = k \cdot a_{ij}$
->
-> Si hay escalares uno dentro de otro, primero se multiplican entre sí.
-
 #### Ejercicio 5
 
 $$
@@ -230,14 +221,6 @@ $$
 
 ## 3. Multiplicación de matrices · Ejercicios 9-12
 
-> **Regla:** $A_{m\times n}\cdot B_{n\times p}=C_{m\times p}$ (las columnas de $A$ deben ser iguales a las filas de $B$).
->
-> Cada elemento $c_{ij}$ es la fila $i$ de $A$ por la columna $j$ de $B$:
->
-> $c_{ij}=a_{i1}b_{1j}+a_{i2}b_{2j}+\dots+a_{in}b_{nj}$
->
-> Con paréntesis, primero se resuelve el producto de adentro.
-
 #### Ejercicio 9
 
 $$
@@ -281,7 +264,6 @@ $$
 \end{bmatrix}
 $$
 
-<!-- Corregido: en el cuaderno D21, D22 y D23 quedaron como -20, -4 y 12. El segundo producto (-4)(c) no se había multiplicado: (-4)(0)=0 y (-4)(7)=-28. -->
 
 $$
 \begin{aligned}
@@ -507,22 +489,3 @@ $$
 
 ---
 
-## Correcciones de cálculo
-
-En el ejercicio 9, al multiplicar la matriz exterior por el resultado del paréntesis, tres elementos de la segunda fila tenían un error: el segundo producto $(-4)\cdot c_{2j}$ no se había multiplicado.
-
-| Elemento | Cuaderno | Corregido |
-|:---:|:---:|:---:|
-| $D_{21}$ | $-16-4=-20$ | $2(-8)+(-4)(0)=-16+0=-16$ |
-| $D_{22}$ | $8-4=-4$ | $2(4)+(-4)(0)=8+0=8$ |
-| $D_{23}$ | $16-4=12$ | $2(8)+(-4)(7)=16-28=-12$ |
-
-Resultado final del ejercicio 9 con las correcciones:
-
-
-$$
-\begin{bmatrix}
-0 & 0 & 35 & -20 \\
--16 & 8 & -12 & -8
-\end{bmatrix}
-$$
