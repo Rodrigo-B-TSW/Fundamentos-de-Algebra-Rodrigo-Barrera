@@ -1,14 +1,15 @@
-# Matrices: inversas y determinantes
-
-Ejercicios 13 al 36. Cada ejercicio muestra el procedimiento paso a paso y su resultado.
-
-| Bloque | Ejercicios | Tema |
-|:---:|:---:|---|
-| 1 | 13 – 20 | Matriz inversa (método de Gauss-Jordan) |
-| 2 | 21 – 28 | Determinante por la regla de Sarrus |
-| 3 | 29 – 36 | Determinante por cofactores (matrices 5×5) |
-
----
+# Actividad #29. Matrices: Determinantes
+ 
+| DATOS | |
+| :--- | :--- |
+| **Alumno** | Rodrigo Barrera García |
+| **Profesor** | Jorge Javier Pedrozo Romero |
+| **Materia** | Fundamentos de Álgebra |
+| **Fecha** | 19/11/2026 |
+| **Lugar** | Mérida, Yucatán. México |
+ 
+### NOTA: La organización y el diseño en html/markdown fueron utilizadas herramientas de inteligencia artificial como apoyo, los procedimientos de cada ejercicio fueron hechos de manera personal y de lo aprendido en clase.
+--- 
 
 ## 1. Matriz inversa · Ejercicios 13-20
 
