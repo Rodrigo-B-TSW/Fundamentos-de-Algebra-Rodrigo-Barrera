@@ -13,20 +13,6 @@
 
 ## 1. Matriz inversa · Ejercicios 13-20
 
-> **Método (cofactores):**
->
-> $A^{-1}=\dfrac{1}{\det A}\,\operatorname{adj}(A)$, donde $\operatorname{adj}(A)=C^{T}$ y $C$ es la matriz de cofactores.
->
-> 1. Calculo cada cofactor $C_{ij}=(-1)^{i+j}M_{ij}$. El menor $M_{ij}$ es un determinante de $2\times2$ (se quita la fila $i$ y la columna $j$). Si sus filas son $(a,\ b)$ y $(c,\ d)$, su determinante es $ad-bc$.
-> 2. Armo la matriz de cofactores $C$.
-> 3. Calculo $\det A$ desarrollando por la fila 1: $\det A=a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13}$.
-> 4. La adjunta es la transpuesta de $C$ (las filas pasan a ser columnas).
-> 5. Divido la adjunta entre el determinante: $A^{-1}=\dfrac{1}{\det A}\operatorname{adj}(A)$.
->
-> **Signos** $(-1)^{i+j}$ en una matriz $3\times3$: fila 1: $+\ -\ +$, fila 2: $-\ +\ -$, fila 3: $+\ -\ +$.
->
-> Si $\det A=0$, la matriz **no tiene inversa**.
-
 
 #### Ejercicio 13
 
