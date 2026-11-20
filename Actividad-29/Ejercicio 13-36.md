@@ -111,7 +111,7 @@ $$
 **Adjunta** (transpuesta de $C$):
 
 $$
-\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+\text{adj}(A)=C^{T}= \begin{bmatrix}
 6 & 9 & -6 \\
 -4 & 3 & -5 \\
 7 & 15 & 2
@@ -121,7 +121,7 @@ $$
 **Inversa:**
 
 $$
-A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= \frac{1}{27} \begin{bmatrix}
+A^{-1}=\frac{1}{\det A}\text{adj}(A)= \frac{1}{27} \begin{bmatrix}
 6 & 9 & -6 \\
 -4 & 3 & -5 \\
 7 & 15 & 2
@@ -236,7 +236,7 @@ $$
 **Adjunta** (transpuesta de $C$):
 
 $$
-\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+\text{adj}(A)=C^{T}= \begin{bmatrix}
 -26 & -6 & -10 \\
 18 & -10 & 14 \\
 -7 & 9 & 15
@@ -246,7 +246,7 @@ $$
 **Inversa:**
 
 $$
-A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= -\frac{1}{92} \begin{bmatrix}
+A^{-1}=\frac{1}{\det A}\text{adj}(A)= -\frac{1}{92} \begin{bmatrix}
 -26 & -6 & -10 \\
 18 & -10 & 14 \\
 -7 & 9 & 15
@@ -404,7 +404,7 @@ $$
 **Adjunta** (transpuesta de $C$):
 
 $$
-\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+\text{adj}(A)=C^{T}= \begin{bmatrix}
 6 & -4 & 9 \\
 -14 & -14 & 14 \\
 -36 & -46 & 16
@@ -414,7 +414,7 @@ $$
 **Inversa:**
 
 $$
-A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= \frac{1}{70} \begin{bmatrix}
+A^{-1}=\frac{1}{\det A}\text{adj}(A)= \frac{1}{70} \begin{bmatrix}
 6 & -4 & 9 \\
 -14 & -14 & 14 \\
 -36 & -46 & 16
@@ -529,7 +529,7 @@ $$
 **Adjunta** (transpuesta de $C$):
 
 $$
-\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+\text{adj}(A)=C^{T}= \begin{bmatrix}
 -6 & 30 & -10 \\
 2 & -10 & -34 \\
 -48 & 16 & 32
@@ -539,7 +539,7 @@ $$
 **Inversa:**
 
 $$
-A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= \frac{1}{224} \begin{bmatrix}
+A^{-1}=\frac{1}{\det A}\text{adj}(A)= \frac{1}{224} \begin{bmatrix}
 -6 & 30 & -10 \\
 2 & -10 & -34 \\
 -48 & 16 & 32
@@ -654,7 +654,7 @@ $$
 **Adjunta** (transpuesta de $C$):
 
 $$
-\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+\text{adj}(A)=C^{T}= \begin{bmatrix}
 20 & 8 & -28 \\
 -8 & 16 & -8 \\
 -3 & -6 & 33
@@ -664,7 +664,7 @@ $$
 **Inversa:**
 
 $$
-A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= -\frac{1}{96} \begin{bmatrix}
+A^{-1}=\frac{1}{\det A}\text{adj}(A)= -\frac{1}{96} \begin{bmatrix}
 20 & 8 & -28 \\
 -8 & 16 & -8 \\
 -3 & -6 & 33
@@ -779,7 +779,7 @@ $$
 **Adjunta** (transpuesta de $C$):
 
 $$
-\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+\text{adj}(A)=C^{T}= \begin{bmatrix}
 30 & -20 & -15 \\
 -21 & 11 & 15 \\
 -18 & 3 & 0
@@ -789,7 +789,7 @@ $$
 **Inversa:**
 
 $$
-A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= \frac{1}{45} \begin{bmatrix}
+A^{-1}=\frac{1}{\det A}\text{adj}(A)= \frac{1}{45} \begin{bmatrix}
 30 & -20 & -15 \\
 -21 & 11 & 15 \\
 -18 & 3 & 0
@@ -904,7 +904,7 @@ $$
 **Adjunta** (transpuesta de $C$):
 
 $$
-\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+\text{adj}(A)=C^{T}= \begin{bmatrix}
 -11 & -16 & -2 \\
 -16 & -8 & -8 \\
 23 & 8 & -6
@@ -914,7 +914,7 @@ $$
 **Inversa:**
 
 $$
-A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= -\frac{1}{56} \begin{bmatrix}
+A^{-1}=\frac{1}{\det A}\text{adj}(A)= -\frac{1}{56} \begin{bmatrix}
 -11 & -16 & -2 \\
 -16 & -8 & -8 \\
 23 & 8 & -6
