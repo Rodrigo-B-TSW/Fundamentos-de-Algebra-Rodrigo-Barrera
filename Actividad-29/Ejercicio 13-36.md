@@ -35,95 +35,117 @@ A= \begin{bmatrix}
 \end{bmatrix}
 $$
 
-**Matriz aumentada** $[A \mid I]$:
+**Cofactores** (cada menor de $2\times2$ se calcula con $ad-bc$):
 
 $$
-\left[\begin{array}{ccc|ccc}
-3 & -4 & -1 & 1 & 0 & 0 \\
--1 & 2 & 2 & 0 & 1 & 0 \\
--3 & -1 & 2 & 0 & 0 & 1
-\end{array}\right]
+C_{11}=(-1)^{1+1} \begin{vmatrix}
+2 & 2 \\
+-1 & 2
+\end{vmatrix} =(+1)\left[(2)(2)-(2)(-1)\right]=(+1)(6)=6
 $$
 
-**Paso 1:** $R_1 \leftrightarrow R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
--1 & 2 & 2 & 0 & 1 & 0 \\
-3 & -4 & -1 & 1 & 0 & 0 \\
--3 & -1 & 2 & 0 & 0 & 1
-\end{array}\right]
+C_{12}=(-1)^{1+2} \begin{vmatrix}
+-1 & 2 \\
+-3 & 2
+\end{vmatrix} =(-1)\left[(-1)(2)-(2)(-3)\right]=(-1)(4)=-4
 $$
 
-**Paso 2:** $R_1 \to -R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -2 & -2 & 0 & -1 & 0 \\
-3 & -4 & -1 & 1 & 0 & 0 \\
--3 & -1 & 2 & 0 & 0 & 1
-\end{array}\right]
+C_{13}=(-1)^{1+3} \begin{vmatrix}
+-1 & 2 \\
+-3 & -1
+\end{vmatrix} =(+1)\left[(-1)(-1)-(2)(-3)\right]=(+1)(7)=7
 $$
 
-**Paso 3:** $R_2 \to R_2 - 3R_1,\ R_3 \to R_3 + 3R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -2 & -2 & 0 & -1 & 0 \\
-0 & 2 & 5 & 1 & 3 & 0 \\
-0 & -7 & -4 & 0 & -3 & 1
-\end{array}\right]
+C_{21}=(-1)^{2+1} \begin{vmatrix}
+-4 & -1 \\
+-1 & 2
+\end{vmatrix} =(-1)\left[(-4)(2)-(-1)(-1)\right]=(-1)(-9)=9
 $$
 
-**Paso 4:** $R_2 \to \frac{1}{2}R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -2 & -2 & 0 & -1 & 0 \\
-0 & 1 & \frac{5}{2} & \frac{1}{2} & \frac{3}{2} & 0 \\
-0 & -7 & -4 & 0 & -3 & 1
-\end{array}\right]
+C_{22}=(-1)^{2+2} \begin{vmatrix}
+3 & -1 \\
+-3 & 2
+\end{vmatrix} =(+1)\left[(3)(2)-(-1)(-3)\right]=(+1)(3)=3
 $$
 
-**Paso 5:** $R_1 \to R_1 + 2R_2,\ R_3 \to R_3 + 7R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & 3 & 1 & 2 & 0 \\
-0 & 1 & \frac{5}{2} & \frac{1}{2} & \frac{3}{2} & 0 \\
-0 & 0 & \frac{27}{2} & \frac{7}{2} & \frac{15}{2} & 1
-\end{array}\right]
+C_{23}=(-1)^{2+3} \begin{vmatrix}
+3 & -4 \\
+-3 & -1
+\end{vmatrix} =(-1)\left[(3)(-1)-(-4)(-3)\right]=(-1)(-15)=15
 $$
 
-**Paso 6:** $R_3 \to \frac{2}{27}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & 3 & 1 & 2 & 0 \\
-0 & 1 & \frac{5}{2} & \frac{1}{2} & \frac{3}{2} & 0 \\
-0 & 0 & 1 & \frac{7}{27} & \frac{5}{9} & \frac{2}{27}
-\end{array}\right]
+C_{31}=(-1)^{3+1} \begin{vmatrix}
+-4 & -1 \\
+2 & 2
+\end{vmatrix} =(+1)\left[(-4)(2)-(-1)(2)\right]=(+1)(-6)=-6
 $$
 
-**Paso 7:** $R_1 \to R_1 - 3R_3,\ R_2 \to R_2 - \frac{5}{2}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & 0 & \frac{2}{9} & \frac{1}{3} & -\frac{2}{9} \\
-0 & 1 & 0 & -\frac{4}{27} & \frac{1}{9} & -\frac{5}{27} \\
-0 & 0 & 1 & \frac{7}{27} & \frac{5}{9} & \frac{2}{27}
-\end{array}\right]
+C_{32}=(-1)^{3+2} \begin{vmatrix}
+3 & -1 \\
+-1 & 2
+\end{vmatrix} =(-1)\left[(3)(2)-(-1)(-1)\right]=(-1)(5)=-5
 $$
 
-La parte izquierda ya es la identidad, así que la derecha es la inversa.
+$$
+C_{33}=(-1)^{3+3} \begin{vmatrix}
+3 & -4 \\
+-1 & 2
+\end{vmatrix} =(+1)\left[(3)(2)-(-4)(-1)\right]=(+1)(2)=2
+$$
+
+**Matriz de cofactores:**
+
+$$
+C= \begin{bmatrix}
+6 & -4 & 7 \\
+9 & 3 & 15 \\
+-6 & -5 & 2
+\end{bmatrix}
+$$
+
+**Determinante** (desarrollo por la fila 1):
+
+$$
+\begin{aligned}
+\det A &= (3)(6)+(-4)(-4)+(-1)(7) \\
+&= 18+16-7 = 27
+\end{aligned}
+$$
+
+**Adjunta** (transpuesta de $C$):
+
+$$
+\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+6 & 9 & -6 \\
+-4 & 3 & -5 \\
+7 & 15 & 2
+\end{bmatrix}
+$$
+
+**Inversa:**
+
+$$
+A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= \frac{1}{27} \begin{bmatrix}
+6 & 9 & -6 \\
+-4 & 3 & -5 \\
+7 & 15 & 2
+\end{bmatrix}
+$$
 
 **Resultado:**
 
 $$
-A^{-1}= \frac{1}{27}\begin{bmatrix}
-6 & 9 & -6 \\
--4 & 3 & -5 \\
-7 & 15 & 2
+A^{-1}= \begin{bmatrix}
+\frac{2}{9} & \frac{1}{3} & -\frac{2}{9} \\
+-\frac{4}{27} & \frac{1}{9} & -\frac{5}{27} \\
+\frac{7}{27} & \frac{5}{9} & \frac{2}{27}
 \end{bmatrix}
 $$
 
@@ -138,95 +160,117 @@ A= \begin{bmatrix}
 \end{bmatrix}
 $$
 
-**Matriz aumentada** $[A \mid I]$:
+**Cofactores** (cada menor de $2\times2$ se calcula con $ad-bc$):
 
 $$
-\left[\begin{array}{ccc|ccc}
-3 & 0 & 2 & 1 & 0 & 0 \\
-4 & 5 & -2 & 0 & 1 & 0 \\
--1 & -3 & -4 & 0 & 0 & 1
-\end{array}\right]
+C_{11}=(-1)^{1+1} \begin{vmatrix}
+5 & -2 \\
+-3 & -4
+\end{vmatrix} =(+1)\left[(5)(-4)-(-2)(-3)\right]=(+1)(-26)=-26
 $$
 
-**Paso 1:** $R_1 \leftrightarrow R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
--1 & -3 & -4 & 0 & 0 & 1 \\
-4 & 5 & -2 & 0 & 1 & 0 \\
-3 & 0 & 2 & 1 & 0 & 0
-\end{array}\right]
+C_{12}=(-1)^{1+2} \begin{vmatrix}
+4 & -2 \\
+-1 & -4
+\end{vmatrix} =(-1)\left[(4)(-4)-(-2)(-1)\right]=(-1)(-18)=18
 $$
 
-**Paso 2:** $R_1 \to -R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 3 & 4 & 0 & 0 & -1 \\
-4 & 5 & -2 & 0 & 1 & 0 \\
-3 & 0 & 2 & 1 & 0 & 0
-\end{array}\right]
+C_{13}=(-1)^{1+3} \begin{vmatrix}
+4 & 5 \\
+-1 & -3
+\end{vmatrix} =(+1)\left[(4)(-3)-(5)(-1)\right]=(+1)(-7)=-7
 $$
 
-**Paso 3:** $R_2 \to R_2 - 4R_1,\ R_3 \to R_3 - 3R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 3 & 4 & 0 & 0 & -1 \\
-0 & -7 & -18 & 0 & 1 & 4 \\
-0 & -9 & -10 & 1 & 0 & 3
-\end{array}\right]
+C_{21}=(-1)^{2+1} \begin{vmatrix}
+0 & 2 \\
+-3 & -4
+\end{vmatrix} =(-1)\left[(0)(-4)-(2)(-3)\right]=(-1)(6)=-6
 $$
 
-**Paso 4:** $R_2 \to -\frac{1}{7}R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 3 & 4 & 0 & 0 & -1 \\
-0 & 1 & \frac{18}{7} & 0 & -\frac{1}{7} & -\frac{4}{7} \\
-0 & -9 & -10 & 1 & 0 & 3
-\end{array}\right]
+C_{22}=(-1)^{2+2} \begin{vmatrix}
+3 & 2 \\
+-1 & -4
+\end{vmatrix} =(+1)\left[(3)(-4)-(2)(-1)\right]=(+1)(-10)=-10
 $$
 
-**Paso 5:** $R_1 \to R_1 - 3R_2,\ R_3 \to R_3 + 9R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & -\frac{26}{7} & 0 & \frac{3}{7} & \frac{5}{7} \\
-0 & 1 & \frac{18}{7} & 0 & -\frac{1}{7} & -\frac{4}{7} \\
-0 & 0 & \frac{92}{7} & 1 & -\frac{9}{7} & -\frac{15}{7}
-\end{array}\right]
+C_{23}=(-1)^{2+3} \begin{vmatrix}
+3 & 0 \\
+-1 & -3
+\end{vmatrix} =(-1)\left[(3)(-3)-(0)(-1)\right]=(-1)(-9)=9
 $$
 
-**Paso 6:** $R_3 \to \frac{7}{92}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & -\frac{26}{7} & 0 & \frac{3}{7} & \frac{5}{7} \\
-0 & 1 & \frac{18}{7} & 0 & -\frac{1}{7} & -\frac{4}{7} \\
-0 & 0 & 1 & \frac{7}{92} & -\frac{9}{92} & -\frac{15}{92}
-\end{array}\right]
+C_{31}=(-1)^{3+1} \begin{vmatrix}
+0 & 2 \\
+5 & -2
+\end{vmatrix} =(+1)\left[(0)(-2)-(2)(5)\right]=(+1)(-10)=-10
 $$
 
-**Paso 7:** $R_1 \to R_1 + \frac{26}{7}R_3,\ R_2 \to R_2 - \frac{18}{7}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & 0 & \frac{13}{46} & \frac{3}{46} & \frac{5}{46} \\
-0 & 1 & 0 & -\frac{9}{46} & \frac{5}{46} & -\frac{7}{46} \\
-0 & 0 & 1 & \frac{7}{92} & -\frac{9}{92} & -\frac{15}{92}
-\end{array}\right]
+C_{32}=(-1)^{3+2} \begin{vmatrix}
+3 & 2 \\
+4 & -2
+\end{vmatrix} =(-1)\left[(3)(-2)-(2)(4)\right]=(-1)(-14)=14
 $$
 
-La parte izquierda ya es la identidad, así que la derecha es la inversa.
+$$
+C_{33}=(-1)^{3+3} \begin{vmatrix}
+3 & 0 \\
+4 & 5
+\end{vmatrix} =(+1)\left[(3)(5)-(0)(4)\right]=(+1)(15)=15
+$$
+
+**Matriz de cofactores:**
+
+$$
+C= \begin{bmatrix}
+-26 & 18 & -7 \\
+-6 & -10 & 9 \\
+-10 & 14 & 15
+\end{bmatrix}
+$$
+
+**Determinante** (desarrollo por la fila 1):
+
+$$
+\begin{aligned}
+\det A &= (3)(-26)+(0)(18)+(2)(-7) \\
+&= -78+0-14 = -92
+\end{aligned}
+$$
+
+**Adjunta** (transpuesta de $C$):
+
+$$
+\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+-26 & -6 & -10 \\
+18 & -10 & 14 \\
+-7 & 9 & 15
+\end{bmatrix}
+$$
+
+**Inversa:**
+
+$$
+A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= -\frac{1}{92} \begin{bmatrix}
+-26 & -6 & -10 \\
+18 & -10 & 14 \\
+-7 & 9 & 15
+\end{bmatrix}
+$$
 
 **Resultado:**
 
 $$
-A^{-1}= \frac{1}{92}\begin{bmatrix}
-26 & 6 & 10 \\
--18 & 10 & -14 \\
-7 & -9 & -15
+A^{-1}= \begin{bmatrix}
+\frac{13}{46} & \frac{3}{46} & \frac{5}{46} \\
+-\frac{9}{46} & \frac{5}{46} & -\frac{7}{46} \\
+\frac{7}{92} & -\frac{9}{92} & -\frac{15}{92}
 \end{bmatrix}
 $$
 
@@ -241,49 +285,37 @@ A= \begin{bmatrix}
 \end{bmatrix}
 $$
 
-**Matriz aumentada** $[A \mid I]$:
+Primero calculo los cofactores de la fila 1, que son los que se necesitan para el determinante:
 
 $$
-\left[\begin{array}{ccc|ccc}
--1 & 4 & -4 & 1 & 0 & 0 \\
-0 & -3 & 4 & 0 & 1 & 0 \\
-0 & 0 & 0 & 0 & 0 & 1
-\end{array}\right]
+C_{11}=(-1)^{1+1} \begin{vmatrix}
+-3 & 4 \\
+0 & 0
+\end{vmatrix} =(+1)\left[(-3)(0)-(4)(0)\right]=(+1)(0)=0
 $$
 
-**Paso 1:** $R_1 \to -R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -4 & 4 & -1 & 0 & 0 \\
-0 & -3 & 4 & 0 & 1 & 0 \\
-0 & 0 & 0 & 0 & 0 & 1
-\end{array}\right]
+C_{12}=(-1)^{1+2} \begin{vmatrix}
+0 & 4 \\
+0 & 0
+\end{vmatrix} =(-1)\left[(0)(0)-(4)(0)\right]=(-1)(0)=0
 $$
 
-**Paso 2:** $R_2 \to -\frac{1}{3}R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -4 & 4 & -1 & 0 & 0 \\
-0 & 1 & -\frac{4}{3} & 0 & -\frac{1}{3} & 0 \\
-0 & 0 & 0 & 0 & 0 & 1
-\end{array}\right]
+C_{13}=(-1)^{1+3} \begin{vmatrix}
+0 & -3 \\
+0 & 0
+\end{vmatrix} =(+1)\left[(0)(0)-(-3)(0)\right]=(+1)(0)=0
 $$
 
-**Paso 3:** $R_1 \to R_1 + 4R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & -\frac{4}{3} & -1 & -\frac{4}{3} & 0 \\
-0 & 1 & -\frac{4}{3} & 0 & -\frac{1}{3} & 0 \\
-0 & 0 & 0 & 0 & 0 & 1
-\end{array}\right]
+\begin{aligned}
+\det A &= (-1)(0)+(4)(0)+(-4)(0) \\
+&= 0+0+0 = 0
+\end{aligned}
 $$
 
-Aparece una fila de ceros en la parte izquierda y ya no se puede obtener la identidad.
-
-**Resultado:** la matriz $A$ **no tiene inversa** ($\det A = 0$).
+**Resultado:** como $\det A = 0$, la matriz $A$ **no tiene inversa**.
 
 
 #### Ejercicio 16
@@ -296,85 +328,117 @@ A= \begin{bmatrix}
 \end{bmatrix}
 $$
 
-**Matriz aumentada** $[A \mid I]$:
+**Cofactores** (cada menor de $2\times2$ se calcula con $ad-bc$):
 
 $$
-\left[\begin{array}{ccc|ccc}
-6 & -5 & 1 & 1 & 0 & 0 \\
--4 & 6 & -3 & 0 & 1 & 0 \\
-2 & 6 & -2 & 0 & 0 & 1
-\end{array}\right]
+C_{11}=(-1)^{1+1} \begin{vmatrix}
+6 & -3 \\
+6 & -2
+\end{vmatrix} =(+1)\left[(6)(-2)-(-3)(6)\right]=(+1)(6)=6
 $$
 
-**Paso 1:** $R_1 \to \frac{1}{6}R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -\frac{5}{6} & \frac{1}{6} & \frac{1}{6} & 0 & 0 \\
--4 & 6 & -3 & 0 & 1 & 0 \\
-2 & 6 & -2 & 0 & 0 & 1
-\end{array}\right]
+C_{12}=(-1)^{1+2} \begin{vmatrix}
+-4 & -3 \\
+2 & -2
+\end{vmatrix} =(-1)\left[(-4)(-2)-(-3)(2)\right]=(-1)(14)=-14
 $$
 
-**Paso 2:** $R_2 \to R_2 + 4R_1,\ R_3 \to R_3 - 2R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -\frac{5}{6} & \frac{1}{6} & \frac{1}{6} & 0 & 0 \\
-0 & \frac{8}{3} & -\frac{7}{3} & \frac{2}{3} & 1 & 0 \\
-0 & \frac{23}{3} & -\frac{7}{3} & -\frac{1}{3} & 0 & 1
-\end{array}\right]
+C_{13}=(-1)^{1+3} \begin{vmatrix}
+-4 & 6 \\
+2 & 6
+\end{vmatrix} =(+1)\left[(-4)(6)-(6)(2)\right]=(+1)(-36)=-36
 $$
 
-**Paso 3:** $R_2 \to \frac{3}{8}R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -\frac{5}{6} & \frac{1}{6} & \frac{1}{6} & 0 & 0 \\
-0 & 1 & -\frac{7}{8} & \frac{1}{4} & \frac{3}{8} & 0 \\
-0 & \frac{23}{3} & -\frac{7}{3} & -\frac{1}{3} & 0 & 1
-\end{array}\right]
+C_{21}=(-1)^{2+1} \begin{vmatrix}
+-5 & 1 \\
+6 & -2
+\end{vmatrix} =(-1)\left[(-5)(-2)-(1)(6)\right]=(-1)(4)=-4
 $$
 
-**Paso 4:** $R_1 \to R_1 + \frac{5}{6}R_2,\ R_3 \to R_3 - \frac{23}{3}R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & -\frac{9}{16} & \frac{3}{8} & \frac{5}{16} & 0 \\
-0 & 1 & -\frac{7}{8} & \frac{1}{4} & \frac{3}{8} & 0 \\
-0 & 0 & \frac{35}{8} & -\frac{9}{4} & -\frac{23}{8} & 1
-\end{array}\right]
+C_{22}=(-1)^{2+2} \begin{vmatrix}
+6 & 1 \\
+2 & -2
+\end{vmatrix} =(+1)\left[(6)(-2)-(1)(2)\right]=(+1)(-14)=-14
 $$
 
-**Paso 5:** $R_3 \to \frac{8}{35}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & -\frac{9}{16} & \frac{3}{8} & \frac{5}{16} & 0 \\
-0 & 1 & -\frac{7}{8} & \frac{1}{4} & \frac{3}{8} & 0 \\
-0 & 0 & 1 & -\frac{18}{35} & -\frac{23}{35} & \frac{8}{35}
-\end{array}\right]
+C_{23}=(-1)^{2+3} \begin{vmatrix}
+6 & -5 \\
+2 & 6
+\end{vmatrix} =(-1)\left[(6)(6)-(-5)(2)\right]=(-1)(46)=-46
 $$
 
-**Paso 6:** $R_1 \to R_1 + \frac{9}{16}R_3,\ R_2 \to R_2 + \frac{7}{8}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & 0 & \frac{3}{35} & -\frac{2}{35} & \frac{9}{70} \\
-0 & 1 & 0 & -\frac{1}{5} & -\frac{1}{5} & \frac{1}{5} \\
-0 & 0 & 1 & -\frac{18}{35} & -\frac{23}{35} & \frac{8}{35}
-\end{array}\right]
+C_{31}=(-1)^{3+1} \begin{vmatrix}
+-5 & 1 \\
+6 & -3
+\end{vmatrix} =(+1)\left[(-5)(-3)-(1)(6)\right]=(+1)(9)=9
 $$
 
-La parte izquierda ya es la identidad, así que la derecha es la inversa.
+$$
+C_{32}=(-1)^{3+2} \begin{vmatrix}
+6 & 1 \\
+-4 & -3
+\end{vmatrix} =(-1)\left[(6)(-3)-(1)(-4)\right]=(-1)(-14)=14
+$$
+
+$$
+C_{33}=(-1)^{3+3} \begin{vmatrix}
+6 & -5 \\
+-4 & 6
+\end{vmatrix} =(+1)\left[(6)(6)-(-5)(-4)\right]=(+1)(16)=16
+$$
+
+**Matriz de cofactores:**
+
+$$
+C= \begin{bmatrix}
+6 & -14 & -36 \\
+-4 & -14 & -46 \\
+9 & 14 & 16
+\end{bmatrix}
+$$
+
+**Determinante** (desarrollo por la fila 1):
+
+$$
+\begin{aligned}
+\det A &= (6)(6)+(-5)(-14)+(1)(-36) \\
+&= 36+70-36 = 70
+\end{aligned}
+$$
+
+**Adjunta** (transpuesta de $C$):
+
+$$
+\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+6 & -4 & 9 \\
+-14 & -14 & 14 \\
+-36 & -46 & 16
+\end{bmatrix}
+$$
+
+**Inversa:**
+
+$$
+A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= \frac{1}{70} \begin{bmatrix}
+6 & -4 & 9 \\
+-14 & -14 & 14 \\
+-36 & -46 & 16
+\end{bmatrix}
+$$
 
 **Resultado:**
 
 $$
-A^{-1}= \frac{1}{70}\begin{bmatrix}
-6 & -4 & 9 \\
--14 & -14 & 14 \\
--36 & -46 & 16
+A^{-1}= \begin{bmatrix}
+\frac{3}{35} & -\frac{2}{35} & \frac{9}{70} \\
+-\frac{1}{5} & -\frac{1}{5} & \frac{1}{5} \\
+-\frac{18}{35} & -\frac{23}{35} & \frac{8}{35}
 \end{bmatrix}
 $$
 
@@ -389,75 +453,117 @@ A= \begin{bmatrix}
 \end{bmatrix}
 $$
 
-**Matriz aumentada** $[A \mid I]$:
+**Cofactores** (cada menor de $2\times2$ se calcula con $ad-bc$):
 
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -5 & -5 & 1 & 0 & 0 \\
-7 & -3 & -1 & 0 & 1 & 0 \\
--2 & -6 & 0 & 0 & 0 & 1
-\end{array}\right]
+C_{11}=(-1)^{1+1} \begin{vmatrix}
+-3 & -1 \\
+-6 & 0
+\end{vmatrix} =(+1)\left[(-3)(0)-(-1)(-6)\right]=(+1)(-6)=-6
 $$
 
-**Paso 1:** $R_2 \to R_2 - 7R_1,\ R_3 \to R_3 + 2R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -5 & -5 & 1 & 0 & 0 \\
-0 & 32 & 34 & -7 & 1 & 0 \\
-0 & -16 & -10 & 2 & 0 & 1
-\end{array}\right]
+C_{12}=(-1)^{1+2} \begin{vmatrix}
+7 & -1 \\
+-2 & 0
+\end{vmatrix} =(-1)\left[(7)(0)-(-1)(-2)\right]=(-1)(-2)=2
 $$
 
-**Paso 2:** $R_2 \to \frac{1}{32}R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -5 & -5 & 1 & 0 & 0 \\
-0 & 1 & \frac{17}{16} & -\frac{7}{32} & \frac{1}{32} & 0 \\
-0 & -16 & -10 & 2 & 0 & 1
-\end{array}\right]
+C_{13}=(-1)^{1+3} \begin{vmatrix}
+7 & -3 \\
+-2 & -6
+\end{vmatrix} =(+1)\left[(7)(-6)-(-3)(-2)\right]=(+1)(-48)=-48
 $$
 
-**Paso 3:** $R_1 \to R_1 + 5R_2,\ R_3 \to R_3 + 16R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & \frac{5}{16} & -\frac{3}{32} & \frac{5}{32} & 0 \\
-0 & 1 & \frac{17}{16} & -\frac{7}{32} & \frac{1}{32} & 0 \\
-0 & 0 & 7 & -\frac{3}{2} & \frac{1}{2} & 1
-\end{array}\right]
+C_{21}=(-1)^{2+1} \begin{vmatrix}
+-5 & -5 \\
+-6 & 0
+\end{vmatrix} =(-1)\left[(-5)(0)-(-5)(-6)\right]=(-1)(-30)=30
 $$
 
-**Paso 4:** $R_3 \to \frac{1}{7}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & \frac{5}{16} & -\frac{3}{32} & \frac{5}{32} & 0 \\
-0 & 1 & \frac{17}{16} & -\frac{7}{32} & \frac{1}{32} & 0 \\
-0 & 0 & 1 & -\frac{3}{14} & \frac{1}{14} & \frac{1}{7}
-\end{array}\right]
+C_{22}=(-1)^{2+2} \begin{vmatrix}
+1 & -5 \\
+-2 & 0
+\end{vmatrix} =(+1)\left[(1)(0)-(-5)(-2)\right]=(+1)(-10)=-10
 $$
 
-**Paso 5:** $R_1 \to R_1 - \frac{5}{16}R_3,\ R_2 \to R_2 - \frac{17}{16}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & 0 & -\frac{3}{112} & \frac{15}{112} & -\frac{5}{112} \\
-0 & 1 & 0 & \frac{1}{112} & -\frac{5}{112} & -\frac{17}{112} \\
-0 & 0 & 1 & -\frac{3}{14} & \frac{1}{14} & \frac{1}{7}
-\end{array}\right]
+C_{23}=(-1)^{2+3} \begin{vmatrix}
+1 & -5 \\
+-2 & -6
+\end{vmatrix} =(-1)\left[(1)(-6)-(-5)(-2)\right]=(-1)(-16)=16
 $$
 
-La parte izquierda ya es la identidad, así que la derecha es la inversa.
+$$
+C_{31}=(-1)^{3+1} \begin{vmatrix}
+-5 & -5 \\
+-3 & -1
+\end{vmatrix} =(+1)\left[(-5)(-1)-(-5)(-3)\right]=(+1)(-10)=-10
+$$
+
+$$
+C_{32}=(-1)^{3+2} \begin{vmatrix}
+1 & -5 \\
+7 & -1
+\end{vmatrix} =(-1)\left[(1)(-1)-(-5)(7)\right]=(-1)(34)=-34
+$$
+
+$$
+C_{33}=(-1)^{3+3} \begin{vmatrix}
+1 & -5 \\
+7 & -3
+\end{vmatrix} =(+1)\left[(1)(-3)-(-5)(7)\right]=(+1)(32)=32
+$$
+
+**Matriz de cofactores:**
+
+$$
+C= \begin{bmatrix}
+-6 & 2 & -48 \\
+30 & -10 & 16 \\
+-10 & -34 & 32
+\end{bmatrix}
+$$
+
+**Determinante** (desarrollo por la fila 1):
+
+$$
+\begin{aligned}
+\det A &= (1)(-6)+(-5)(2)+(-5)(-48) \\
+&= -6-10+240 = 224
+\end{aligned}
+$$
+
+**Adjunta** (transpuesta de $C$):
+
+$$
+\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+-6 & 30 & -10 \\
+2 & -10 & -34 \\
+-48 & 16 & 32
+\end{bmatrix}
+$$
+
+**Inversa:**
+
+$$
+A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= \frac{1}{224} \begin{bmatrix}
+-6 & 30 & -10 \\
+2 & -10 & -34 \\
+-48 & 16 & 32
+\end{bmatrix}
+$$
 
 **Resultado:**
 
 $$
-A^{-1}= \frac{1}{112}\begin{bmatrix}
--3 & 15 & -5 \\
-1 & -5 & -17 \\
--24 & 8 & 16
+A^{-1}= \begin{bmatrix}
+-\frac{3}{112} & \frac{15}{112} & -\frac{5}{112} \\
+\frac{1}{112} & -\frac{5}{112} & -\frac{17}{112} \\
+-\frac{3}{14} & \frac{1}{14} & \frac{1}{7}
 \end{bmatrix}
 $$
 
@@ -472,95 +578,117 @@ A= \begin{bmatrix}
 \end{bmatrix}
 $$
 
-**Matriz aumentada** $[A \mid I]$:
+**Cofactores** (cada menor de $2\times2$ se calcula con $ad-bc$):
 
 $$
-\left[\begin{array}{ccc|ccc}
--5 & 1 & -4 & 1 & 0 & 0 \\
--3 & -6 & -4 & 0 & 1 & 0 \\
--1 & -1 & -4 & 0 & 0 & 1
-\end{array}\right]
+C_{11}=(-1)^{1+1} \begin{vmatrix}
+-6 & -4 \\
+-1 & -4
+\end{vmatrix} =(+1)\left[(-6)(-4)-(-4)(-1)\right]=(+1)(20)=20
 $$
 
-**Paso 1:** $R_1 \leftrightarrow R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
--1 & -1 & -4 & 0 & 0 & 1 \\
--3 & -6 & -4 & 0 & 1 & 0 \\
--5 & 1 & -4 & 1 & 0 & 0
-\end{array}\right]
+C_{12}=(-1)^{1+2} \begin{vmatrix}
+-3 & -4 \\
+-1 & -4
+\end{vmatrix} =(-1)\left[(-3)(-4)-(-4)(-1)\right]=(-1)(8)=-8
 $$
 
-**Paso 2:** $R_1 \to -R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 1 & 4 & 0 & 0 & -1 \\
--3 & -6 & -4 & 0 & 1 & 0 \\
--5 & 1 & -4 & 1 & 0 & 0
-\end{array}\right]
+C_{13}=(-1)^{1+3} \begin{vmatrix}
+-3 & -6 \\
+-1 & -1
+\end{vmatrix} =(+1)\left[(-3)(-1)-(-6)(-1)\right]=(+1)(-3)=-3
 $$
 
-**Paso 3:** $R_2 \to R_2 + 3R_1,\ R_3 \to R_3 + 5R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 1 & 4 & 0 & 0 & -1 \\
-0 & -3 & 8 & 0 & 1 & -3 \\
-0 & 6 & 16 & 1 & 0 & -5
-\end{array}\right]
+C_{21}=(-1)^{2+1} \begin{vmatrix}
+1 & -4 \\
+-1 & -4
+\end{vmatrix} =(-1)\left[(1)(-4)-(-4)(-1)\right]=(-1)(-8)=8
 $$
 
-**Paso 4:** $R_2 \to -\frac{1}{3}R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 1 & 4 & 0 & 0 & -1 \\
-0 & 1 & -\frac{8}{3} & 0 & -\frac{1}{3} & 1 \\
-0 & 6 & 16 & 1 & 0 & -5
-\end{array}\right]
+C_{22}=(-1)^{2+2} \begin{vmatrix}
+-5 & -4 \\
+-1 & -4
+\end{vmatrix} =(+1)\left[(-5)(-4)-(-4)(-1)\right]=(+1)(16)=16
 $$
 
-**Paso 5:** $R_1 \to R_1 - R_2,\ R_3 \to R_3 - 6R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & \frac{20}{3} & 0 & \frac{1}{3} & -2 \\
-0 & 1 & -\frac{8}{3} & 0 & -\frac{1}{3} & 1 \\
-0 & 0 & 32 & 1 & 2 & -11
-\end{array}\right]
+C_{23}=(-1)^{2+3} \begin{vmatrix}
+-5 & 1 \\
+-1 & -1
+\end{vmatrix} =(-1)\left[(-5)(-1)-(1)(-1)\right]=(-1)(6)=-6
 $$
 
-**Paso 6:** $R_3 \to \frac{1}{32}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & \frac{20}{3} & 0 & \frac{1}{3} & -2 \\
-0 & 1 & -\frac{8}{3} & 0 & -\frac{1}{3} & 1 \\
-0 & 0 & 1 & \frac{1}{32} & \frac{1}{16} & -\frac{11}{32}
-\end{array}\right]
+C_{31}=(-1)^{3+1} \begin{vmatrix}
+1 & -4 \\
+-6 & -4
+\end{vmatrix} =(+1)\left[(1)(-4)-(-4)(-6)\right]=(+1)(-28)=-28
 $$
 
-**Paso 7:** $R_1 \to R_1 - \frac{20}{3}R_3,\ R_2 \to R_2 + \frac{8}{3}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & 0 & -\frac{5}{24} & -\frac{1}{12} & \frac{7}{24} \\
-0 & 1 & 0 & \frac{1}{12} & -\frac{1}{6} & \frac{1}{12} \\
-0 & 0 & 1 & \frac{1}{32} & \frac{1}{16} & -\frac{11}{32}
-\end{array}\right]
+C_{32}=(-1)^{3+2} \begin{vmatrix}
+-5 & -4 \\
+-3 & -4
+\end{vmatrix} =(-1)\left[(-5)(-4)-(-4)(-3)\right]=(-1)(8)=-8
 $$
 
-La parte izquierda ya es la identidad, así que la derecha es la inversa.
+$$
+C_{33}=(-1)^{3+3} \begin{vmatrix}
+-5 & 1 \\
+-3 & -6
+\end{vmatrix} =(+1)\left[(-5)(-6)-(1)(-3)\right]=(+1)(33)=33
+$$
+
+**Matriz de cofactores:**
+
+$$
+C= \begin{bmatrix}
+20 & -8 & -3 \\
+8 & 16 & -6 \\
+-28 & -8 & 33
+\end{bmatrix}
+$$
+
+**Determinante** (desarrollo por la fila 1):
+
+$$
+\begin{aligned}
+\det A &= (-5)(20)+(1)(-8)+(-4)(-3) \\
+&= -100-8+12 = -96
+\end{aligned}
+$$
+
+**Adjunta** (transpuesta de $C$):
+
+$$
+\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+20 & 8 & -28 \\
+-8 & 16 & -8 \\
+-3 & -6 & 33
+\end{bmatrix}
+$$
+
+**Inversa:**
+
+$$
+A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= -\frac{1}{96} \begin{bmatrix}
+20 & 8 & -28 \\
+-8 & 16 & -8 \\
+-3 & -6 & 33
+\end{bmatrix}
+$$
 
 **Resultado:**
 
 $$
-A^{-1}= \frac{1}{96}\begin{bmatrix}
--20 & -8 & 28 \\
-8 & -16 & 8 \\
-3 & 6 & -33
+A^{-1}= \begin{bmatrix}
+-\frac{5}{24} & -\frac{1}{12} & \frac{7}{24} \\
+\frac{1}{12} & -\frac{1}{6} & \frac{1}{12} \\
+\frac{1}{32} & \frac{1}{16} & -\frac{11}{32}
 \end{bmatrix}
 $$
 
@@ -575,95 +703,117 @@ A= \begin{bmatrix}
 \end{bmatrix}
 $$
 
-**Matriz aumentada** $[A \mid I]$:
+**Cofactores** (cada menor de $2\times2$ se calcula con $ad-bc$):
 
 $$
-\left[\begin{array}{ccc|ccc}
--1 & -1 & -3 & 1 & 0 & 0 \\
--6 & -6 & -3 & 0 & 1 & 0 \\
-3 & 6 & -2 & 0 & 0 & 1
-\end{array}\right]
+C_{11}=(-1)^{1+1} \begin{vmatrix}
+-6 & -3 \\
+6 & -2
+\end{vmatrix} =(+1)\left[(-6)(-2)-(-3)(6)\right]=(+1)(30)=30
 $$
 
-**Paso 1:** $R_1 \to -R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 1 & 3 & -1 & 0 & 0 \\
--6 & -6 & -3 & 0 & 1 & 0 \\
-3 & 6 & -2 & 0 & 0 & 1
-\end{array}\right]
+C_{12}=(-1)^{1+2} \begin{vmatrix}
+-6 & -3 \\
+3 & -2
+\end{vmatrix} =(-1)\left[(-6)(-2)-(-3)(3)\right]=(-1)(21)=-21
 $$
 
-**Paso 2:** $R_2 \to R_2 + 6R_1,\ R_3 \to R_3 - 3R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 1 & 3 & -1 & 0 & 0 \\
-0 & 0 & 15 & -6 & 1 & 0 \\
-0 & 3 & -11 & 3 & 0 & 1
-\end{array}\right]
+C_{13}=(-1)^{1+3} \begin{vmatrix}
+-6 & -6 \\
+3 & 6
+\end{vmatrix} =(+1)\left[(-6)(6)-(-6)(3)\right]=(+1)(-18)=-18
 $$
 
-**Paso 3:** $R_2 \leftrightarrow R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 1 & 3 & -1 & 0 & 0 \\
-0 & 3 & -11 & 3 & 0 & 1 \\
-0 & 0 & 15 & -6 & 1 & 0
-\end{array}\right]
+C_{21}=(-1)^{2+1} \begin{vmatrix}
+-1 & -3 \\
+6 & -2
+\end{vmatrix} =(-1)\left[(-1)(-2)-(-3)(6)\right]=(-1)(20)=-20
 $$
 
-**Paso 4:** $R_2 \to \frac{1}{3}R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 1 & 3 & -1 & 0 & 0 \\
-0 & 1 & -\frac{11}{3} & 1 & 0 & \frac{1}{3} \\
-0 & 0 & 15 & -6 & 1 & 0
-\end{array}\right]
+C_{22}=(-1)^{2+2} \begin{vmatrix}
+-1 & -3 \\
+3 & -2
+\end{vmatrix} =(+1)\left[(-1)(-2)-(-3)(3)\right]=(+1)(11)=11
 $$
 
-**Paso 5:** $R_1 \to R_1 - R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & \frac{20}{3} & -2 & 0 & -\frac{1}{3} \\
-0 & 1 & -\frac{11}{3} & 1 & 0 & \frac{1}{3} \\
-0 & 0 & 15 & -6 & 1 & 0
-\end{array}\right]
+C_{23}=(-1)^{2+3} \begin{vmatrix}
+-1 & -1 \\
+3 & 6
+\end{vmatrix} =(-1)\left[(-1)(6)-(-1)(3)\right]=(-1)(-3)=3
 $$
 
-**Paso 6:** $R_3 \to \frac{1}{15}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & \frac{20}{3} & -2 & 0 & -\frac{1}{3} \\
-0 & 1 & -\frac{11}{3} & 1 & 0 & \frac{1}{3} \\
-0 & 0 & 1 & -\frac{2}{5} & \frac{1}{15} & 0
-\end{array}\right]
+C_{31}=(-1)^{3+1} \begin{vmatrix}
+-1 & -3 \\
+-6 & -3
+\end{vmatrix} =(+1)\left[(-1)(-3)-(-3)(-6)\right]=(+1)(-15)=-15
 $$
 
-**Paso 7:** $R_1 \to R_1 - \frac{20}{3}R_3,\ R_2 \to R_2 + \frac{11}{3}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & 0 & \frac{2}{3} & -\frac{4}{9} & -\frac{1}{3} \\
-0 & 1 & 0 & -\frac{7}{15} & \frac{11}{45} & \frac{1}{3} \\
-0 & 0 & 1 & -\frac{2}{5} & \frac{1}{15} & 0
-\end{array}\right]
+C_{32}=(-1)^{3+2} \begin{vmatrix}
+-1 & -3 \\
+-6 & -3
+\end{vmatrix} =(-1)\left[(-1)(-3)-(-3)(-6)\right]=(-1)(-15)=15
 $$
 
-La parte izquierda ya es la identidad, así que la derecha es la inversa.
+$$
+C_{33}=(-1)^{3+3} \begin{vmatrix}
+-1 & -1 \\
+-6 & -6
+\end{vmatrix} =(+1)\left[(-1)(-6)-(-1)(-6)\right]=(+1)(0)=0
+$$
+
+**Matriz de cofactores:**
+
+$$
+C= \begin{bmatrix}
+30 & -21 & -18 \\
+-20 & 11 & 3 \\
+-15 & 15 & 0
+\end{bmatrix}
+$$
+
+**Determinante** (desarrollo por la fila 1):
+
+$$
+\begin{aligned}
+\det A &= (-1)(30)+(-1)(-21)+(-3)(-18) \\
+&= -30+21+54 = 45
+\end{aligned}
+$$
+
+**Adjunta** (transpuesta de $C$):
+
+$$
+\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+30 & -20 & -15 \\
+-21 & 11 & 15 \\
+-18 & 3 & 0
+\end{bmatrix}
+$$
+
+**Inversa:**
+
+$$
+A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= \frac{1}{45} \begin{bmatrix}
+30 & -20 & -15 \\
+-21 & 11 & 15 \\
+-18 & 3 & 0
+\end{bmatrix}
+$$
 
 **Resultado:**
 
 $$
-A^{-1}= \frac{1}{45}\begin{bmatrix}
-30 & -20 & -15 \\
--21 & 11 & 15 \\
--18 & 3 & 0
+A^{-1}= \begin{bmatrix}
+\frac{2}{3} & -\frac{4}{9} & -\frac{1}{3} \\
+-\frac{7}{15} & \frac{11}{45} & \frac{1}{3} \\
+-\frac{2}{5} & \frac{1}{15} & 0
 \end{bmatrix}
 $$
 
@@ -678,95 +828,117 @@ A= \begin{bmatrix}
 \end{bmatrix}
 $$
 
-**Matriz aumentada** $[A \mid I]$:
+**Cofactores** (cada menor de $2\times2$ se calcula con $ad-bc$):
 
 $$
-\left[\begin{array}{ccc|ccc}
--2 & 2 & -2 & 1 & 0 & 0 \\
-5 & -2 & 1 & 0 & 1 & 0 \\
--1 & 5 & 3 & 0 & 0 & 1
-\end{array}\right]
+C_{11}=(-1)^{1+1} \begin{vmatrix}
+-2 & 1 \\
+5 & 3
+\end{vmatrix} =(+1)\left[(-2)(3)-(1)(5)\right]=(+1)(-11)=-11
 $$
 
-**Paso 1:** $R_1 \leftrightarrow R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
--1 & 5 & 3 & 0 & 0 & 1 \\
-5 & -2 & 1 & 0 & 1 & 0 \\
--2 & 2 & -2 & 1 & 0 & 0
-\end{array}\right]
+C_{12}=(-1)^{1+2} \begin{vmatrix}
+5 & 1 \\
+-1 & 3
+\end{vmatrix} =(-1)\left[(5)(3)-(1)(-1)\right]=(-1)(16)=-16
 $$
 
-**Paso 2:** $R_1 \to -R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -5 & -3 & 0 & 0 & -1 \\
-5 & -2 & 1 & 0 & 1 & 0 \\
--2 & 2 & -2 & 1 & 0 & 0
-\end{array}\right]
+C_{13}=(-1)^{1+3} \begin{vmatrix}
+5 & -2 \\
+-1 & 5
+\end{vmatrix} =(+1)\left[(5)(5)-(-2)(-1)\right]=(+1)(23)=23
 $$
 
-**Paso 3:** $R_2 \to R_2 - 5R_1,\ R_3 \to R_3 + 2R_1$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -5 & -3 & 0 & 0 & -1 \\
-0 & 23 & 16 & 0 & 1 & 5 \\
-0 & -8 & -8 & 1 & 0 & -2
-\end{array}\right]
+C_{21}=(-1)^{2+1} \begin{vmatrix}
+2 & -2 \\
+5 & 3
+\end{vmatrix} =(-1)\left[(2)(3)-(-2)(5)\right]=(-1)(16)=-16
 $$
 
-**Paso 4:** $R_2 \to \frac{1}{23}R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & -5 & -3 & 0 & 0 & -1 \\
-0 & 1 & \frac{16}{23} & 0 & \frac{1}{23} & \frac{5}{23} \\
-0 & -8 & -8 & 1 & 0 & -2
-\end{array}\right]
+C_{22}=(-1)^{2+2} \begin{vmatrix}
+-2 & -2 \\
+-1 & 3
+\end{vmatrix} =(+1)\left[(-2)(3)-(-2)(-1)\right]=(+1)(-8)=-8
 $$
 
-**Paso 5:** $R_1 \to R_1 + 5R_2,\ R_3 \to R_3 + 8R_2$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & \frac{11}{23} & 0 & \frac{5}{23} & \frac{2}{23} \\
-0 & 1 & \frac{16}{23} & 0 & \frac{1}{23} & \frac{5}{23} \\
-0 & 0 & -\frac{56}{23} & 1 & \frac{8}{23} & -\frac{6}{23}
-\end{array}\right]
+C_{23}=(-1)^{2+3} \begin{vmatrix}
+-2 & 2 \\
+-1 & 5
+\end{vmatrix} =(-1)\left[(-2)(5)-(2)(-1)\right]=(-1)(-8)=8
 $$
 
-**Paso 6:** $R_3 \to -\frac{23}{56}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & \frac{11}{23} & 0 & \frac{5}{23} & \frac{2}{23} \\
-0 & 1 & \frac{16}{23} & 0 & \frac{1}{23} & \frac{5}{23} \\
-0 & 0 & 1 & -\frac{23}{56} & -\frac{1}{7} & \frac{3}{28}
-\end{array}\right]
+C_{31}=(-1)^{3+1} \begin{vmatrix}
+2 & -2 \\
+-2 & 1
+\end{vmatrix} =(+1)\left[(2)(1)-(-2)(-2)\right]=(+1)(-2)=-2
 $$
 
-**Paso 7:** $R_1 \to R_1 - \frac{11}{23}R_3,\ R_2 \to R_2 - \frac{16}{23}R_3$
-
 $$
-\left[\begin{array}{ccc|ccc}
-1 & 0 & 0 & \frac{11}{56} & \frac{2}{7} & \frac{1}{28} \\
-0 & 1 & 0 & \frac{2}{7} & \frac{1}{7} & \frac{1}{7} \\
-0 & 0 & 1 & -\frac{23}{56} & -\frac{1}{7} & \frac{3}{28}
-\end{array}\right]
+C_{32}=(-1)^{3+2} \begin{vmatrix}
+-2 & -2 \\
+5 & 1
+\end{vmatrix} =(-1)\left[(-2)(1)-(-2)(5)\right]=(-1)(8)=-8
 $$
 
-La parte izquierda ya es la identidad, así que la derecha es la inversa.
+$$
+C_{33}=(-1)^{3+3} \begin{vmatrix}
+-2 & 2 \\
+5 & -2
+\end{vmatrix} =(+1)\left[(-2)(-2)-(2)(5)\right]=(+1)(-6)=-6
+$$
+
+**Matriz de cofactores:**
+
+$$
+C= \begin{bmatrix}
+-11 & -16 & 23 \\
+-16 & -8 & 8 \\
+-2 & -8 & -6
+\end{bmatrix}
+$$
+
+**Determinante** (desarrollo por la fila 1):
+
+$$
+\begin{aligned}
+\det A &= (-2)(-11)+(2)(-16)+(-2)(23) \\
+&= 22-32-46 = -56
+\end{aligned}
+$$
+
+**Adjunta** (transpuesta de $C$):
+
+$$
+\operatorname{adj}(A)=C^{T}= \begin{bmatrix}
+-11 & -16 & -2 \\
+-16 & -8 & -8 \\
+23 & 8 & -6
+\end{bmatrix}
+$$
+
+**Inversa:**
+
+$$
+A^{-1}=\frac{1}{\det A}\operatorname{adj}(A)= -\frac{1}{56} \begin{bmatrix}
+-11 & -16 & -2 \\
+-16 & -8 & -8 \\
+23 & 8 & -6
+\end{bmatrix}
+$$
 
 **Resultado:**
 
 $$
-A^{-1}= \frac{1}{56}\begin{bmatrix}
-11 & 16 & 2 \\
-16 & 8 & 8 \\
--23 & -8 & 6
+A^{-1}= \begin{bmatrix}
+\frac{11}{56} & \frac{2}{7} & \frac{1}{28} \\
+\frac{2}{7} & \frac{1}{7} & \frac{1}{7} \\
+-\frac{23}{56} & -\frac{1}{7} & \frac{3}{28}
 \end{bmatrix}
 $$
 
