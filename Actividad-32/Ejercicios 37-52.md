@@ -24,10 +24,7 @@
 > - Intercambiar filas: $R_i \leftrightarrow R_j$
 > - Multiplicar una fila por un número distinto de cero: $R_i \to kR_i$
 > - Sumar o restar a una fila un múltiplo de otra: $R_i \to R_i + kR_j$
->
-> Para evitar fracciones uso $R_i \to kR_i - mR_j$ (se multiplica la fila que se modifica y se resta un múltiplo de la fila pivote). Si una fila queda con un factor común, la divido.
- 
- 
+
 #### Ejercicio 37
  
 **Sistema:**
