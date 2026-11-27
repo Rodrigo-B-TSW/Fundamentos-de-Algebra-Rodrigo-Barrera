@@ -19,7 +19,7 @@
 > 2. Con operaciones entre filas hago ceros debajo de la diagonal (matriz escalonada).
 > 3. Resuelvo por sustitución hacia atrás: de la última fila a la primera.
 >
-> **Operaciones entre filas** ($R_i$ es la fila $i$):
+> **Tres reglas importantes:** 
 >
 > - Intercambiar filas: $R_i \leftrightarrow R_j$
 > - Multiplicar una fila por un número distinto de cero: $R_i \to kR_i$
