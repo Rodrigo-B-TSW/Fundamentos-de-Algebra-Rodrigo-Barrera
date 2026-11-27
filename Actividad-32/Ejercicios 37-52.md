@@ -8,6 +8,7 @@
 | **Fecha** | 16/11/2026 |
 | **Lugar** | Mérida, Yucatán. México |
 
+### NOTA: La organización y el diseño en html/markdown fueron utilizadas herramientas de inteligencia artificial como apoyo, los procedimientos de cada ejercicio fueron hechos de manera personal y de lo aprendido en clase.
 ---
  
 ## 1. Método de Gauss · Ejercicios 37-44
