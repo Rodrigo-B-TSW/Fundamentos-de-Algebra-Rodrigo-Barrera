@@ -802,9 +802,7 @@ $$
 > 1. Escribo la matriz aumentada $[A \mid b]$.
 > 2. En cada columna: convierto el pivote (elemento de la diagonal) en $1$ y hago ceros **arriba y abajo** de él.
 > 3. Cuando a la izquierda queda la matriz identidad, la última columna es la solución.
->
-> En Gauss-Jordan no hace falta sustituir hacia atrás: la solución se lee directamente.
->
+
 > **Casos especiales:**
 >
 > - Si aparece una fila $0\ 0\ 0 \mid d$ con $d \neq 0$, equivale a $0=d$: el sistema **no tiene solución**.
